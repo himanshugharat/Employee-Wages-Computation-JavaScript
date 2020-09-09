@@ -23,4 +23,3 @@ for (let days = 0; days < MIN_NUM_OF_DAYS; days++) {
     console.log("EMployee daily wages are " + empWages);
 }
 console.log("total monthly wages" + totalWages)
-}
