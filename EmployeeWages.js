@@ -7,6 +7,7 @@ let totalEmpWages = 0;
 let totalEmpHrs = 0;
 let totalWages = 0;
 let totalWorkingDays = 0
+function WageCalculator(){
 while (totalEmpHrs < MAX_HOURS_A_MONTH && totalWorkingDays < MIN_NUM_OF_DAYS) {
     let empHrs = 0;
     let empWages = 0;
@@ -29,3 +30,5 @@ while (totalEmpHrs < MAX_HOURS_A_MONTH && totalWorkingDays < MIN_NUM_OF_DAYS) {
 }
 console.log("total monthly wages" + totalWages);
 console.log("total working days" + totalWorkingDays);
+}
+WageCalculator();
