@@ -26,7 +26,8 @@ function WageCalculator() {
         }
         empWages = empHrs * EMP_RATE_PER_HOUR;
         totalWages += empWages;
-        console.log("Employee daily wages are " + empWages + " and till date total wages are " + totalWages);
+        console.log("Employee daily wages are " + empWages + " and till date " + totalWorkingDays 
+        + " total wages are " + totalWages);
     }
     console.log("total monthly wages" + totalWages);
     console.log("total working days" + totalWorkingDays);
