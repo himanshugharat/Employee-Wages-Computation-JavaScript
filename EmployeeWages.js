@@ -2,11 +2,16 @@ const EMP_RATE_PER_HOUR = 20;
 const IS_FULL_TIME = 1;
 const IS_PART_TIME = 2;
 const MIN_NUM_OF_DAYS = 20;
-let empWages = 0;
-let empHrs = 0;
+const MAX_HOURS_A_MONTH = 100;
+let totalEmpWages = 0;
+let totalEmpHrs = 0;
 let totalWages = 0;
-let presentCheck = parseInt(Math.random() * 10) % 3;
-for (let days = 0; days < MIN_NUM_OF_DAYS; days++) {
+let totalWorkingDays = 0
+while (totalEmpHrs < MAX_HOURS_A_MONTH && totalWorkingDays < MIN_NUM_OF_DAYS) {
+    let empHrs = 0;
+    let empWages = 0;
+    let presentCheck = parseInt(Math.random() * 10) % 3;
+    totalWorkingDays++;
     switch (presentCheck) {
         case IS_FULL_TIME:
             empHrs = 8;
@@ -22,4 +27,5 @@ for (let days = 0; days < MIN_NUM_OF_DAYS; days++) {
     totalWages += empWages;
     console.log("EMployee daily wages are " + empWages);
 }
-console.log("total monthly wages" + totalWages)
+console.log("total monthly wages" + totalWages);
+console.log("total working days" + totalWorkingDays);
